@@ -1,0 +1,34 @@
+nav ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+nav li {
+  display: inline-block;
+}
+nav li a {
+  text-decoration: none;
+  background: #000;
+  color: #fff;
+  font-family: Arial;
+  font-weight: 100;
+  font-size: 60px;
+}
+
+.container {
+  font-family: Arial;
+  font-weight: 100;
+  font-size: 60px;
+  text-align: center;
+  background-color: #bbb;
+}
+.container h1 {
+  font-size: 20px;
+  color: green;
+}
+.container p {
+  font-size: 30px;
+  color: blue;
+}
+
+/*# sourceMappingURL=nesting.css.map */

@@ -1,0 +1,56 @@
+p {
+  color: red;
+  background: green;
+  padding: 5px;
+  font-size: 2em;
+  text-align: center;
+}
+
+h3 {
+  color: yellow;
+  background: blue;
+  padding: 5px;
+  font-size: 4em;
+  text-align: center;
+}
+@media screen and (min-width: 800px) {
+  h3 {
+    color: pink;
+    background: cornflowerblue;
+    font-size: 1.5em;
+    border: 2px solid #000;
+  }
+}
+
+h1 {
+  color: black;
+  background: #aaa;
+  padding: 5px;
+  font-size: 20px;
+  text-align: center;
+}
+
+.lorem {
+  color: white;
+  background: blue;
+  padding: 5px;
+  font-size: 20px;
+  text-align: center;
+}
+
+.experimental {
+  width: 400px;
+  height: 400px;
+  background: rgb(2, 0, 0);
+  border: 3px solid yellow;
+}
+@media screen and (min-width: 1000px) {
+  .experimental {
+    width: 400px;
+    height: 400px;
+    background: crimson;
+    border-radius: 50%;
+  }
+}
+
+/*# sourceMappingURL=mixin.css.map */

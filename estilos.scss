@@ -1,0 +1,67 @@
+$numero1:30;
+$numero2:30px;
+$numero3:30s;
+
+$string1: 'Daniel';
+$string2: none;
+
+$color1: yellow;
+$color2: #000;
+$color3: rgb(255,0,0);
+
+$listas1: 1px solid #000;
+$listas2: 1px, solid, rgb(17,15,15);
+
+$booleano1: true;
+$booleano2: false;
+
+$map1: (
+    primera:yellow,
+    segunda: blue
+);
+
+@debug $numero1;
+@debug $string1;
+@debug $color1;
+@debug $listas1;
+@debug $booleano1;
+@debug $map1;
+
+@debug type-of($numero1);
+@debug type-of($string1); 
+@debug type-of($color1); 
+@debug type-of($listas1); 
+@debug type-of($booleano1); 
+@debug type-of($map1); 
+
+body {
+    background: $color1;
+    color:$color2;
+    font-size: 3em;
+}
+
+p {
+    color:$color3;
+    font-size: $numero2;
+}
+
+h1 {
+    color:$color2;
+    font-size: $numero2;
+}
+
+h2 {
+    color:$color2;
+    font-size: $numero2;
+}
+
+h3 {
+    $numero2:50px !global;//redeclarando variable $numero2 - variable global
+    color:$color2;
+    font-size: $numero2;
+}
+
+h4 {
+    color:$color2;
+    font-size: $numero2;
+}

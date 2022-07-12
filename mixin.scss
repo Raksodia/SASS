@@ -1,0 +1,56 @@
+@mixin  textos ($color, $size, $background){
+    color: $color;
+    background: $background;
+    padding: 5px;
+    font-size: $size;
+    text-align: center;
+}
+
+@mixin textosResponsive {
+    @media screen and (min-width:800px){
+        color: pink;
+        background: cornflowerblue;
+        font-size: 1.5em;
+        border: 2px solid #000;
+    }
+}
+
+p {
+    @include textos(red, 2em, green);
+}
+
+h3 {
+    @include textos(yellow, 4em, blue);
+    @include textosResponsive;
+}
+
+h1 {
+    @include textos(black,20px ,#aaa );
+}
+
+.lorem {
+    @include textos(white,20px ,blue );
+}
+
+@mixin divRedondo{
+    @media screen and (min-width:1000px){
+        width:400px;
+        height:400px;
+        background: crimson;
+        border-radius: 50%;
+    } 
+}
+
+@mixin divCuadrado{
+
+        width:400px;
+        height:400px;
+        background: rgb(2,0,0);
+        border: 3px solid yellow;
+}
+
+.experimental {
+    @include divRedondo;
+    @include divCuadrado;
+    
+}
